@@ -10,9 +10,9 @@ if g:jedi#auto_initialization
     if len(g:jedi#goto_command)
         execute 'nnoremap <buffer> '.g:jedi#goto_command.' :call jedi#goto()<CR>'
     endif
-    if len(g:jedi#goto_assignments_command)
-        execute 'nnoremap <buffer> '.g:jedi#goto_assignments_command.' :call jedi#goto_assignments()<CR>'
-    endif
+    " if len(g:jedi#goto_assignments_command)
+    "     execute 'nnoremap <buffer> '.g:jedi#goto_assignments_command.' :call jedi#goto_assignments()<CR>'
+    " endif
     if len(g:jedi#goto_definitions_command)
         execute 'nnoremap <buffer> '.g:jedi#goto_definitions_command.' :call jedi#goto_definitions()<CR>'
     endif
